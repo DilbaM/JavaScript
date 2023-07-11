@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+<h1>Jogo de Adivinha</h1>
+
+<br>
+<script>
+    function pularlinha()
+    {
+        document.write("<br>");
+    }
+    function mostrar(escrita)
+    {
+        document.write(escrita);
+        pularlinha();
+    }
+    
+    var numero = Math.round(Math.random() * 10);
+    var contador = 1;
+    while (contador <=3 ) {
+
+        var chute = parseInt(prompt("Digite um número entre 1 e 10: "));   
+        
+        if ( chute==numero){
+            mostrar("Você acertou!!!");
+            contador = 4;
+        }
+        
+        else {
+        mostrar("Você errou! o numero era " + numero);
+        }
+        contador++;
+        
+    }    
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Jogo de Adivinhação</h1>
+    <input type="text" id="numeroInput">
+    <button onclick="verifica()">Compare com o meu número</button>
+    <br>
+    <script>
+        var numero = [5, 6 , 7];
+        function verifica() {
+            var input = document.getElementById("numeroInput").value;
+            if (input == numero) {
+                alert("Você acertou!");
+            } else {
+                alert("Você errou!");
+            }
+        }
+    </script>
+</body>
+</html>

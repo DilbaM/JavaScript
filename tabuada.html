@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+<h1>Copa</h1>
+
+<br>
+<script>
+    function pularlinha()
+    {
+        document.write("<br>");
+    }
+    function mostrar(escrita)
+    {
+        document.write(escrita);
+        pularlinha();
+    }
+
+    for (var multiplicador = 1; multiplicador <=10; multiplicador ++) {
+        mostrar ("7 X "+ multiplicador + "="+ 7 * multiplicador);
+        multiplicador = multiplicador++;
+    }
+    alert ("Fim");
+</script>
+</body>
+</html>

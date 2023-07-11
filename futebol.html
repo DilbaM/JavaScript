@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol</title>
+</head>
+<body>
+    <script>
+        function pularlinha()
+        {
+            document.write("<br>");
+        }
+        function mostrar(frase)
+        {
+            document.write(frase);
+            pularlinha();
+        }
+        var vitorias = parseInt(prompt("Qual o numero de vitorias? "))
+        var empates = parseInt(prompt("Qual o numero de empates? "))
+
+        var pontos = (vitorias * 3) + empates; 
+        mostrar ("Sua pontuação é " + pontos)
+
+        if( pontos > 15) {
+            mostrar ("Seu time ta melhorando, com base no ano passado")
+        }
+
+        if(pontos < 15) {
+            mostrar ("Seu time esta pior que o ano passado, melhore!")
+        }
+
+        if(pontos == 15) {
+            mostrar("Seu time manteve o nivel estavel do ano passado pra cá")
+        }
+    </script>    
+</body>
+</html>

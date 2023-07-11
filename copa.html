@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+<h1>Copa</h1>
+
+<br>
+<script>
+    function pularlinha()
+    {
+        document.write("<br>");
+    }
+    function mostrar(escrita)
+    {
+        document.write(escrita);
+        pularlinha();
+    }
+
+    var anocopa = 1930;
+    while(anocopa<=2023){
+        mostrar("Teve copa em " + anocopa);
+        anocopa = anocopa + 4;
+    }
+    
+    alert ("Fim");
+</script>
+</body>
+</html>
